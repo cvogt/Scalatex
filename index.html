@@ -7,9 +7,9 @@
           );
         })
       })
-    </script></head><a href="https://github.com/lihaoyi/scalatex" style="position: absolute;top: 0;right: 0;border: 0;"><img src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" /></a><body style="max-width: 768px;margin-left: auto;margin-right: auto;" class="scalatex-content">
+    </script></head><a href="https://github.com/lihaoyi/scalatex" style="position: absolute;top: 0px;right: 0px;border: 0;"><img src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" /></a><body style="max-width: 768px;margin-left: auto;margin-right: auto;" class="scalatex-content">
 
-<h1 id="Scalatex0.1.1" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Scalatex0.1.1" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Scalatex 0.1.1</h1>
+<h1 id="Scalatex0.1.1" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Scalatex0.1.1" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Scalatex 0.1.1</h1>
   <i>Programmable Documents in Scala</i>
 
   <div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">@div(id:=&quot;my-div&quot;)
@@ -45,12 +45,12 @@
     All these things are trivial and elegant to perform with Scalatex, and difficult or messy to do with other static-site-generators. Although Scalatex generates HTML, you can easily build up whatever tags best describe what <i>you</i> want to do, and use those to build your document, rather than relying on the ad-hoc and messy set provided by browsers.
 </p>
   <p>
-    Scalatex lets you write your HTML in a hierarchical structure which then gets compiled to HTML. In Scalatex, everything is part of the output document, except for tokens marked with an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@</code> sign. These correspond to HTML tags (provided by <a href="https://github.com/lihaoyi/scalatags">Scalatags</a>), values you want to interpolate, control flow statements, function calls (or definitions!), basically anything that isn't plain text.</p>
+    Scalatex lets you write your HTML in a hierarchical structure which then gets compiled to HTML. In Scalatex, everything is part of the output document, except for tokens marked with an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@</code> sign. These correspond to HTML tags (provided by <a href="https://github.com/lihaoyi/scalatags">Scalatags</a>), values you want to interpolate, control flow statements, function calls (or definitions!), basically anything that isn't plain text.</p>
   <p>
     Scalatex is currently used to generate it's own readme (<a href="https://github.com/lihaoyi/scalatex/blob/master/readme/src/main/scalatex/scalatex/Readme.scalatex">here</a>) as well as the e-book <a href="http://lihaoyi.github.io/hands-on-scala-js">Hands-on Scala.js</a>. It is only published for Scala 2.11.x for the time being.
 </p>
-  <ul style="margin-top: 0;margin-bottom: 0;"><li><div><a href="#GettingStarted">Getting Started</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#WhatScalatexDoes">What Scalatex Does</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#ExploringScalatex">Exploring Scalatex</a><ul style="margin-top: 0;margin-bottom: 0;"><li><div><a href="#Loops">Loops</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#Conditionals">Conditionals</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#Functions">Functions</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#Interpolations">Interpolations</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#ExternalDefinitions">External Definitions</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#InternalDefinitions">Internal Definitions</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li></ul></div></li><li><div><a href="#ScalatexSite">Scalatex Site</a><ul style="margin-top: 0;margin-bottom: 0;"><li><div><a href="#Section">Section</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#Highlighter">Highlighter</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#Site">Site</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li></ul></div></li><li><div><a href="#AdvancedTechniques">Advanced Techniques</a><ul style="margin-top: 0;margin-bottom: 0;"><li><div><a href="#CustomTags">Custom Tags</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#FindingDeadLinks">Finding Dead Links</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#GeneratingaTableofContents">Generating a Table of Contents</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li></ul></div></li><li><div><a href="#WhyScalatex">Why Scalatex</a><ul style="margin-top: 0;margin-bottom: 0;"><li><div><a href="#WhyNot:Markdown">Why Not: Markdown</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li><li><div><a href="#WhyNot:Twirl">Why Not: Twirl</a><ul style="margin-top: 0;margin-bottom: 0;"></ul></div></li></ul></div></li></ul>
-  <h2 id="GettingStarted" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#GettingStarted" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Getting Started</h2>
+  <ul style="margin-top: 0px;margin-bottom: 0px;"><li><div><a href="#GettingStarted">Getting Started</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#WhatScalatexDoes">What Scalatex Does</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#ExploringScalatex">Exploring Scalatex</a><ul style="margin-top: 0px;margin-bottom: 0px;"><li><div><a href="#Loops">Loops</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#Conditionals">Conditionals</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#Functions">Functions</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#Interpolations">Interpolations</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#ExternalDefinitions">External Definitions</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#InternalDefinitions">Internal Definitions</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li></ul></div></li><li><div><a href="#ScalatexSite">Scalatex Site</a><ul style="margin-top: 0px;margin-bottom: 0px;"><li><div><a href="#Section">Section</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#Highlighter">Highlighter</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#Site">Site</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li></ul></div></li><li><div><a href="#AdvancedTechniques">Advanced Techniques</a><ul style="margin-top: 0px;margin-bottom: 0px;"><li><div><a href="#CustomTags">Custom Tags</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#FindingDeadLinks">Finding Dead Links</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#GeneratingaTableofContents">Generating a Table of Contents</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li></ul></div></li><li><div><a href="#WhyScalatex">Why Scalatex</a><ul style="margin-top: 0px;margin-bottom: 0px;"><li><div><a href="#WhyNot:Markdown">Why Not: Markdown</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li><li><div><a href="#WhyNot:Twirl">Why Not: Twirl</a><ul style="margin-top: 0px;margin-bottom: 0px;"></ul></div></li></ul></div></li></ul>
+  <h2 id="GettingStarted" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#GettingStarted" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Getting Started</h2>
     <p>
       To get started with Scalatex, add the following to your <code>project/build.sbt</code>:
 </p>
@@ -90,15 +90,15 @@ scalaVersion := &quot;2.11.4&quot;
     <p>
       There we have it, your first Scalatex document! You can put this on gh-pages, use it on a website, or where-ever you want.
 </p>
-  <h2 id="WhatScalatexDoes" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#WhatScalatexDoes" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>What Scalatex Does</h2>
+  <h2 id="WhatScalatexDoes" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#WhatScalatexDoes" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>What Scalatex Does</h2>
 
     <p>
-      Scalatex converts every <code>.scalatex</code> file in its source folder into a corresponding Scala <code>object</code>. These objects have an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">apply</code> method which returns a Scalatags <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Frag</code>, which you can then call <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">.render</code> on to give you a HTML string. You can also do other things with the Scalatags <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Frag</code>, but to learn more about it and Scalatags in general take a look at the Scalatags documentation.
+      Scalatex converts every <code>.scalatex</code> file in its source folder into a corresponding Scala <code>object</code>. These objects have an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">apply</code> method which returns a Scalatags <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Frag</code>, which you can then call <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">.render</code> on to give you a HTML string. You can also do other things with the Scalatags <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Frag</code>, but to learn more about it and Scalatags in general take a look at the Scalatags documentation.
 </p>
     <p>
-      Inside each Scalatex file, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@</code>-escaped things correspond to Scala keywords or names that are currently in scope. Apart from keywords, only <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">scalatags.Text.all._</code> is imported by default. This brings in all the HTML tags that we used above to build those HTML fragments. However, you can also <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@import</code> whatever other names you want, or refer to them fully qualified.
+      Inside each Scalatex file, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@</code>-escaped things correspond to Scala keywords or names that are currently in scope. Apart from keywords, only <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">scalatags.Text.all._</code> is imported by default. This brings in all the HTML tags that we used above to build those HTML fragments. However, you can also <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@import</code> whatever other names you want, or refer to them fully qualified.
 </p>
-  <h2 id="ExploringScalatex" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#ExploringScalatex" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Exploring Scalatex</h2>
+  <h2 id="ExploringScalatex" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#ExploringScalatex" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Exploring Scalatex</h2>
     <div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">@div
   @h1(&quot;Hello World&quot;)
   @h2{I am Cow}
@@ -120,18 +120,18 @@ scalaVersion := &quot;2.11.4&quot;
 </p>
     <ul>
       <li>
-        <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@</code>-escapes followed by identation (like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@div</code> above) are passed all the subsequently-indented lines as children.</li>
+        <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@</code>-escapes followed by identation (like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@div</code> above) are passed all the subsequently-indented lines as children.</li>
       <li>
-        <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@</code>-escapes followed by curly braces (like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@h2</code> above) are passed everything inside the curly braces as children</li>
+        <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@</code>-escapes followed by curly braces (like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@h2</code> above) are passed everything inside the curly braces as children</li>
       <li>
-        <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@</code>-escapes followed by parentheses (like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@h1</code> above) are passed the contents of the parentheses as a Scala expression.</li>
+        <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@</code>-escapes followed by parentheses (like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@h1</code> above) are passed the contents of the parentheses as a Scala expression.</li>
       <li>
-        Everything outside of a set of parentheses, that isn't an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@</code>-escape, is treated as a string.
+        Everything outside of a set of parentheses, that isn't an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@</code>-escape, is treated as a string.
 </li></ul>
     <p>
-      This accounts for the variation in syntax that you see above. In general, you almost always want to use identation-based blocks to delimit large sections of the document, only falling back to curly braces for one-line or one-word tags like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@h2</code> or <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@b</code> above.
+      This accounts for the variation in syntax that you see above. In general, you almost always want to use identation-based blocks to delimit large sections of the document, only falling back to curly braces for one-line or one-word tags like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@h2</code> or <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@b</code> above.
 </p>
-    <h3 id="Loops" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Loops" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Loops</h3>
+    <h3 id="Loops" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Loops" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Loops</h3>
       <div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">@ul
   @for(x &lt;- 0 until 3)
     @li
@@ -143,20 +143,20 @@ scalaVersion := &quot;2.11.4&quot;
 &lt;/ul&gt;</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L79-L84" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="clear: both;"></div></div>
 
       <p>
-        Scalatex supports for-loops, as shown above. Again, everything inside the parentheses are an arbitrary Scala expression. Here we can see it binding the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">x</code> value, which is then used in the body of the loop as <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@x</code> to splice it into the document.</p>
+        Scalatex supports for-loops, as shown above. Again, everything inside the parentheses are an arbitrary Scala expression. Here we can see it binding the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">x</code> value, which is then used in the body of the loop as <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@x</code> to splice it into the document.</p>
       <p>
         In general, there are always two contexts to keep track of:
 </p>
       <ul>
         <li>
-          Scalatex: strings are raw <code>text</code>, but variables are escaped as <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@x</code></li>
+          Scalatex: strings are raw <code>text</code>, but variables are escaped as <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@x</code></li>
         <li>
-          Scala: strings are enclosed e.g. <code>&quot;text&quot;</code>, but variables are raw <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">x</code>
+          Scala: strings are enclosed e.g. <code>&quot;text&quot;</code>, but variables are raw <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">x</code>
 </li></ul>
       <p>
         The value of strings or variables is completely identical in both contexts; it's only the syntax that differs.
 </p>
-    <h3 id="Conditionals" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Conditionals" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Conditionals</h3>
+    <h3 id="Conditionals" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Conditionals" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Conditionals</h3>
       <div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">@ul
   @for(x &lt;- 0 until 5)
     @li
@@ -172,9 +172,9 @@ scalaVersion := &quot;2.11.4&quot;
 &lt;/ul&gt;</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L98-L105" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="clear: both;"></div></div>
 
       <p>
-        Scalatex supports <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">if</code>-<code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">else</code> statements, that behave as you'd expect. Here we're using one in conjunction with a loop to alternate the formatting of different items in a list.
+        Scalatex supports <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">if</code>-<code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">else</code> statements, that behave as you'd expect. Here we're using one in conjunction with a loop to alternate the formatting of different items in a list.
 </p>
-    <h3 id="Functions" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Functions" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Functions</h3>
+    <h3 id="Functions" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Functions" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Functions</h3>
       <div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">@span
   The square root of 9.0
   is @math.sqrt(9.0)</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L110-L113" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="html scalatex-highlight-js hljs">&lt;span&gt;
@@ -182,15 +182,15 @@ scalaVersion := &quot;2.11.4&quot;
 &lt;/span&gt;</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L115-L118" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="clear: both;"></div></div>
 
       <p>
-        Apart from splicing values into the document, you can also call functions, such as <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">math.sqrt</code> here.
+        Apart from splicing values into the document, you can also call functions, such as <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">math.sqrt</code> here.
 </p>
-    <h3 id="Interpolations" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Interpolations" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Interpolations</h3>
+    <h3 id="Interpolations" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Interpolations" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Interpolations</h3>
       <div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">@span
   1 + 2 is @(1 + 2)</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L125-L127" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">@span
   1 + 2 is @{1 + 2}</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L129-L131" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="html scalatex-highlight-js hljs">&lt;span&gt;1 + 2 is 3&lt;/span&gt;</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L133-L134" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="clear: both;"></div></div>
 
       <p>
-        You can also splice the result of arbitrary chunks of code within a Scalatex document. Using parens <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">()</code> lets you splice a single expression, whereas using curlies <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">{</code>} lets you splice a block which can contain multiple statements.
+        You can also splice the result of arbitrary chunks of code within a Scalatex document. Using parens <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">()</code> lets you splice a single expression, whereas using curlies <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">{</code>} lets you splice a block which can contain multiple statements.
 </p>
       <p>
         Blocks can span many lines:
@@ -205,7 +205,7 @@ scalaVersion := &quot;2.11.4&quot;
   1 + 2 is 3
 &lt;/div&gt;</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L148-L151" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="clear: both;"></div></div>
 
-    <h3 id="ExternalDefinitions" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#ExternalDefinitions" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>External Definitions</h3>
+    <h3 id="ExternalDefinitions" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#ExternalDefinitions" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>External Definitions</h3>
       <p>
         You can use imports to bring things into scope, so you don't need to keep referring to them by their full name:
 </p>
@@ -234,7 +234,7 @@ scalaVersion := &quot;2.11.4&quot;
 @omg.wrap
   i @b{am} cow @str</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L184-L187" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="width: 50%;float: left;"><pre class="scalatex-hover-container"><code class="html scalatex-highlight-js hljs">...i &lt;b&gt;am&lt;/b&gt; cow hear me moo...</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L189-L190" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="clear: both;"></div></div>
 
-    <h3 id="InternalDefinitions" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#InternalDefinitions" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Internal Definitions</h3>
+    <h3 id="InternalDefinitions" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#InternalDefinitions" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Internal Definitions</h3>
 
       <p>
         You can also define things anywhere <i>inside</i> your Scalatex document. These definitions are only visible within the same document, and are scoped to any blocks they're defined within:
@@ -258,18 +258,18 @@ scalaVersion := &quot;2.11.4&quot;
 &lt;/p&gt;</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/api/src/test/scala/scalatex/ExampleTests.scala#L211-L217" target="_blank"><i class="fa fa-link "></i></a></pre></div><div style="clear: both;"></div></div>
       <p>
         This is very useful for defining constants or functions which aren't needed anywhere else, but can help reduce repetition within the current document</p>
-  <h2 id="ScalatexSite" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#ScalatexSite" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Scalatex Site</h2>
+  <h2 id="ScalatexSite" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#ScalatexSite" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Scalatex Site</h2>
     <p>
-      The core of Scalatex is a very small, superficial translation from the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">.scalatex</code> syntax to a <a href="https://github.com/lihaoyi/scalatags">Scalatags</a> fragment, letting you spit out HTML strings. Nevertheless, there are other concerns common to most (all?) documents, and Scalatags provides a number of common utilities in
+      The core of Scalatex is a very small, superficial translation from the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">.scalatex</code> syntax to a <a href="https://github.com/lihaoyi/scalatags">Scalatags</a> fragment, letting you spit out HTML strings. Nevertheless, there are other concerns common to most (all?) documents, and Scalatags provides a number of common utilities in
 </p>
     <pre><code class="scala scalatex-highlight-js">libraryDependencies += &quot;com.lihaoyi&quot; %% &quot;scalatex-site&quot; % &quot;0.1.1&quot;
 </code></pre>
     <p>
       Here are a number of them.
 </p>
-    <h3 id="Section" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Section" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Section</h3>
+    <h3 id="Section" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Section" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Section</h3>
       <p>
-        One concern common to almost all documents is the idea of a section hierarchy: a tree of document sections where each section has a header and some contents, potentially containing more (smaller) sections. Scalatext provides the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">scalatex.site.Section</code> helper that lets you do this easily:
+        One concern common to almost all documents is the idea of a section hierarchy: a tree of document sections where each section has a header and some contents, potentially containing more (smaller) sections. Scalatext provides the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">scalatex.site.Section</code> helper that lets you do this easily:
 </p>
       <div>
         <div style="width: 50%;float: left;">
@@ -297,30 +297,30 @@ scalaVersion := &quot;2.11.4&quot;
           <hr /><div style="opacity: 0.6;font-style: oblique;">
             
 
-<h1 id="MainSection" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#MainSection" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Main Section</h1>
+<h1 id="MainSection" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#MainSection" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Main Section</h1>
   <p>
     Hello World
 </p>
-  <h2 id="SubsectionA" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SubsectionA" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Subsection A</h2>
+  <h2 id="SubsectionA" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SubsectionA" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Subsection A</h2>
     <p>
       I am Cow</p>
-  <h2 id="SubsectionB" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SubsectionB" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Subsection B</h2>
+  <h2 id="SubsectionB" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SubsectionB" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Subsection B</h2>
     <p>
       Hear me moo</p>
-  <h2 id="SubsectionC" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SubsectionC" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Subsection C</h2>
-    <h3 id="Sub-sub-sectionC1" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Sub-sub-sectionC1" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Sub-sub-section C1</h3>
+  <h2 id="SubsectionC" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SubsectionC" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Subsection C</h2>
+    <h3 id="Sub-sub-sectionC1" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Sub-sub-sectionC1" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Sub-sub-section C1</h3>
       <p>
         I weigh twice as much as you</p>
-    <h3 id="Sub-sub-sectionC2" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Sub-sub-sectionC2" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Sub-sub-section C2</h3>
+    <h3 id="Sub-sub-sectionC2" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Sub-sub-sectionC2" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Sub-sub-section C2</h3>
       <p>
         And I look good on
         the barbecue</p>
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
-        As you can see, all the indented sections are automatically set to smaller headings. This is of course doable manually with <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@h1</code> <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@h2</code> <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@h3</code> tags etc., but then you have to manually keep track of how deep something is. With <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Section</code>, this is kept track of for you.
+        As you can see, all the indented sections are automatically set to smaller headings. This is of course doable manually with <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@h1</code> <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@h2</code> <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@h3</code> tags etc., but then you have to manually keep track of how deep something is. With <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Section</code>, this is kept track of for you.
 </p>
       <p>
-        You can override the default rendering of <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Section</code>s to e.g. use different headers:
+        You can override the default rendering of <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Section</code>s to e.g. use different headers:
 </p>
       <div>
         <div style="width: 50%;float: left;">
@@ -333,28 +333,28 @@ scalaVersion := &quot;2.11.4&quot;
           <hr /><div style="opacity: 0.6;font-style: oblique;">
             
 
-<b id="PlansfortheRevolution" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#PlansfortheRevolution" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Plans for the Revolution</b>
+<b id="PlansfortheRevolution" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#PlansfortheRevolution" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Plans for the Revolution</b>
   <p>
     Hello World
 </p>
-  <u id="Coupd'etat" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Coupd'etat" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Coup d'etat</u>
+  <u id="Coupd'etat" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Coupd'etat" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Coup d'etat</u>
     <p>
       I am Cow
 </p>
-  <u id="NewWorldOrder" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#NewWorldOrder" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>New World Order</u>
+  <u id="NewWorldOrder" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#NewWorldOrder" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>New World Order</u>
     <br />
-    <s id="MonetaryPolicy" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#MonetaryPolicy" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Monetary Policy</s>
+    <s id="MonetaryPolicy" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#MonetaryPolicy" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Monetary Policy</s>
       <p>
         I weigh twice as much as you</p>
-    <s id="Conscription" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Conscription" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Conscription</s>
+    <s id="Conscription" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Conscription" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Conscription</s>
       <p>
         And I look good on the barbecue</p>
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
-        Above, you see it using bold, underlines and strike-throughs to delimit the boundaries between headers. You can also override things in more detail using the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Section.Header</code> class instead of simple tags.
+        Above, you see it using bold, underlines and strike-throughs to delimit the boundaries between headers. You can also override things in more detail using the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Section.Header</code> class instead of simple tags.
 </p>
       <p>
-        You can use <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@sect.ref</code> to link to another part of the document:
+        You can use <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@sect.ref</code> to link to another part of the document:
 </p>
       <div>
         <div style="width: 50%;float: left;">
@@ -383,14 +383,14 @@ scalaVersion := &quot;2.11.4&quot;
           <hr /><div style="opacity: 0.6;font-style: oblique;">
             
 
-<h1 id="PagewithRefs" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#PagewithRefs" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Page with Refs</h1>
+<h1 id="PagewithRefs" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#PagewithRefs" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Page with Refs</h1>
   <p>
     Hello World, look at <a href="#SectA">Sect A</a>
 </p>
-  <h2 id="SectA" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SectA" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Sect A</h2>
+  <h2 id="SectA" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SectA" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Sect A</h2>
     <p>
       I am Cow</p>
-  <h2 id="SectB" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SectB" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Sect B</h2>
+  <h2 id="SectB" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SectB" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Sect B</h2>
     <p>
       Hear me moo. Click
       <a href="#PagewithRefs">Page with Refs</a> to
@@ -403,14 +403,14 @@ Tree(root,ArrayBuffer(Tree(Page with Refs,ArrayBuffer(Tree(Sect A,ArrayBuffer())
 Set(Page with Refs, Sect A)
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
-        Any links created with <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@sect.ref</code> are stored in an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@sect.usedRefs</code> property as a list. We also expose a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@sect.structure</code> property which allows you to inspect the tree of sections.
+        Any links created with <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@sect.ref</code> are stored in an <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@sect.usedRefs</code> property as a list. We also expose a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@sect.structure</code> property which allows you to inspect the tree of sections.
 </p>
       <p>
-        Here we're just stringifying the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Tree</code> structure and placing it as text on the page, but you can easily recurse over the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Tree</code> structure and use it to e.g. build a table of contents, or a navigation bar. You can also compare the two structures to validate the internal links and ensure that none of our <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@sect.ref</code>s are broken.
+        Here we're just stringifying the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Tree</code> structure and placing it as text on the page, but you can easily recurse over the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Tree</code> structure and use it to e.g. build a table of contents, or a navigation bar. You can also compare the two structures to validate the internal links and ensure that none of our <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@sect.ref</code>s are broken.
 </p>
-    <h3 id="Highlighter" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Highlighter" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Highlighter</h3>
+    <h3 id="Highlighter" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Highlighter" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Highlighter</h3>
       <p>
-        Scalatex Site provides a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Highlighter</code> class, which lets you easily highlight snippets of code pulled from files on disk. First, you need to instantiate a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Highlighter</code> object:
+        Scalatex Site provides a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Highlighter</code> class, which lets you easily highlight snippets of code pulled from files on disk. First, you need to instantiate a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Highlighter</code> object:
 </p>
       <pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">package scalatex.highlighter
 
@@ -443,11 +443,11 @@ object hl extends scalatex.site.Highlighter{
         <div style="width: 50%;float: left;">
           <hr /><div style="opacity: 0.6;font-style: oblique;">
             <div>
-  <code class="xml scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">&lt;div&gt;&lt;b&gt;Some&lt;/b&gt; HTML&lt;/div&gt;</code></div>
+  <code class="xml scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">&lt;div&gt;&lt;b&gt;Some&lt;/b&gt; HTML&lt;/div&gt;</code></div>
 <div>
-  <code class="javascript scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">f = function(x){return x+1}</code></div>
+  <code class="javascript scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">f = function(x){return x+1}</code></div>
 <div>
-  <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">val f = (x) =&gt; { x + 1 }</code></div>
+  <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">val f = (x) =&gt; { x + 1 }</code></div>
 
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
@@ -467,10 +467,10 @@ object hl extends scalatex.site.Highlighter{
 
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
-        Note here we are using <a href="https://github.com/lihaoyi/Ammonite">Ammonite</a> to construct a path to pass to <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@hl.ref</code>; this path takes a working directory which you'll need to define yourself (here imported from <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Main</code>) via <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">val wd = ammonite.all.proessWorkingDir</code>.
+        Note here we are using <a href="https://github.com/lihaoyi/Ammonite">Ammonite</a> to construct a path to pass to <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@hl.ref</code>; this path takes a working directory which you'll need to define yourself (here imported from <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Main</code>) via <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">val wd = ammonite.all.proessWorkingDir</code>.
 </p>
       <p>
-        Apart than referencing the whole file, you can also grab text from the line containing a key-string to the line containing another; here is parts of Scalatex's build file, from <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">lazy val api</code> to the next <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">lazy val</code>:
+        Apart than referencing the whole file, you can also grab text from the line containing a key-string to the line containing another; here is parts of Scalatex's build file, from <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">lazy val api</code> to the next <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">lazy val</code>:
 </p>
       <div>
         <div style="width: 50%;float: left;">
@@ -486,25 +486,25 @@ object hl extends scalatex.site.Highlighter{
             
 
 <pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">lazy val api = project.settings(sharedSettings:_*)
-  .dependsOn(scalaParser)
   .settings(
     name := &quot;scalatex-api&quot;,
     libraryDependencies ++= Seq(
-      &quot;com.lihaoyi&quot; %% &quot;utest&quot; % &quot;0.2.4&quot; % &quot;test&quot;,
-      &quot;com.scalatags&quot; %% &quot;scalatags&quot; % &quot;0.4.2&quot;,
+      &quot;com.lihaoyi&quot; %% &quot;utest&quot; % &quot;0.3.0&quot; % &quot;test&quot;,
+      &quot;com.lihaoyi&quot; %% &quot;scala-parser&quot; % &quot;0.1.1&quot;,
+      &quot;com.lihaoyi&quot; %% &quot;scalatags&quot; % &quot;0.4.5&quot;,
       &quot;org.scala-lang&quot; % &quot;scala-reflect&quot; % scalaVersion.value,
-      &quot;org.parboiled&quot; %% &quot;parboiled&quot; % &quot;2.0.1&quot;
+      &quot;org.parboiled&quot; %% &quot;parboiled&quot; % &quot;2.1.0&quot;
     ),
-    testFrameworks += new TestFramework(&quot;utest.runner.JvmFramework&quot;)
+    testFrameworks += new TestFramework(&quot;utest.runner.Framework&quot;)
   )</code></pre>
 
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
-        Using multiple key-strings to navigate to a particular start- or end- line; here is the body of the unit test <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">scalatex.BasicTests.parenArgumentLists.attributes</code>, only from the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">check</code> to the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">}</code> closing that test.
+        Using multiple key-strings to navigate to a particular start- or end- line; here is the body of the unit test <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">scalatex.BasicTests.parenArgumentLists.attributes</code>, only from the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">check</code> to the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">}</code> closing that test.
 </p>
       <div>
         <div style="width: 50%;float: left;">
-          <pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">@import ammonite.all._
+          <pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">@import ammonite.ops._
 @hl.ref(
   'api/'src/'test/'scala/
   'scalatex/&quot;BasicTests.scala&quot;,
@@ -531,9 +531,9 @@ object hl extends scalatex.site.Highlighter{
 
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
-        Note the spaces before the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">}</code>, which ensures that it doesn't grab the earlier <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">}</code> in the string-literal which is part of the test body.</p>
+        Note the spaces before the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">}</code>, which ensures that it doesn't grab the earlier <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">}</code> in the string-literal which is part of the test body.</p>
       <p>
-        Normally, the language used to highlight is inferred from the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">suffixMappings</code> you defined when instantiating the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Highlighter</code>. You can override it manually by passing it in:
+        Normally, the language used to highlight is inferred from the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">suffixMappings</code> you defined when instantiating the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Highlighter</code>. You can override it manually by passing it in:
 </p>
       <div>
         <div style="width: 50%;float: left;">
@@ -579,7 +579,7 @@ object hl extends scalatex.site.Highlighter{
         As you can see, this is especially useful from grabbing examples from unit tests. You can encapsulate the boilerplate in a function, and easily grab both the code and the expected output from the unit tests highlighted in their own particular way to include in the document.
 </p>
       <p>
-        Lastly, you can define a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">pathMappings</code> property, which is a sequence of prefixes which the highlighter tries to match against the files you're referencing. If any of them match, a link is generated (in the top right corner of the code snippet) containing the mapped path prefix combined with the remainder of the file path. Here's one that links everything to github:
+        Lastly, you can define a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">pathMappings</code> property, which is a sequence of prefixes which the highlighter tries to match against the files you're referencing. If any of them match, a link is generated (in the top right corner of the code snippet) containing the mapped path prefix combined with the remainder of the file path. Here's one that links everything to github:
 </p>
       <div>
         <div style="width: 50%;float: left;">
@@ -625,15 +625,15 @@ object hl extends scalatex.site.Highlighter{
 
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
-        You can customize the link to link to other places (bitbucket, local files, etc.) by changing the mapped URL. You can also pass in multiple <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">pathMappings</code> have links to files in different folders map to different base URLs, e.g. if you are referencing files in sub-repositories that have different public code
+        You can customize the link to link to other places (bitbucket, local files, etc.) by changing the mapped URL. You can also pass in multiple <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">pathMappings</code> have links to files in different folders map to different base URLs, e.g. if you are referencing files in sub-repositories that have different public code
 </p>
       <hr />
       <p>
-        In general, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Highlighter.ref</code> is very helpful to quickly grab snippets of code from your unit tests, examples, or other places to include in your document. Using <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Highlighter.ref</code>, you should never need to copy &amp; paste code from unit tests to your documentation: simply refer to it directly, and you are guaranteed that your documentation will always be compile-able and in sync with what your code actually does in its unit tests.
+        In general, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Highlighter.ref</code> is very helpful to quickly grab snippets of code from your unit tests, examples, or other places to include in your document. Using <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Highlighter.ref</code>, you should never need to copy &amp; paste code from unit tests to your documentation: simply refer to it directly, and you are guaranteed that your documentation will always be compile-able and in sync with what your code actually does in its unit tests.
 </p>
-    <h3 id="Site" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Site" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Site</h3>
+    <h3 id="Site" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#Site" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Site</h3>
       <p>
-        Finally, if all you want is to produce a working, pretty website without having to set up CSS and hosting and all that yourself, Scalatex provides a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Site</code> trait which lets you do this easily:
+        Finally, if all you want is to produce a working, pretty website without having to set up CSS and hosting and all that yourself, Scalatex provides a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Site</code> trait which lets you do this easily:
 </p>
       <pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">val site = new scalatex.site.Site {
   def content = Map(&quot;index.html&quot; -&gt; Hello())
@@ -644,7 +644,7 @@ site.renderTo(wd/'site/'target/'output)</code><a class="scalatex-header-link" st
         This will result in a single HTML file <code>index.html</code> in the <code>site/target/output/</code> folder, as .well as a the Javascript for <a href="https://highlightjs.org/">Highlight.js</a> and css for <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> and <a href="http://purecss.io/">Less CSS</a> bundled together into <code>scripts.js</code> and <code>styles.css</code>. From there, you can simply copy the whole folder and serve it on whatever static file hosting (Github Pages, S3, etc.).
 </p>
       <p>
-        Although <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Site</code> provides reasonable defaults for all these things they are entirely customizable, and you just need to override various definitions when instantiating the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Site</code>. For example, here's a slightly more complex <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Site</code> that generates multiple HTML pages (<code>page1.html</code> and <code>page2.html</code>) and generates them with custom names for the CSS and Javascript bundles.
+        Although <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Site</code> provides reasonable defaults for all these things they are entirely customizable, and you just need to override various definitions when instantiating the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Site</code>. For example, here's a slightly more complex <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Site</code> that generates multiple HTML pages (<code>page1.html</code> and <code>page2.html</code>) and generates them with custom names for the CSS and Javascript bundles.
 </p>
       <pre class="scalatex-hover-container"><code class="scala scalatex-highlight-js hljs">val site = new scalatex.site.Site {
   def content = Map(
@@ -660,12 +660,12 @@ site.renderTo(wd/'site/'target/'output)</code><a class="scalatex-header-link" st
 site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" style="position: absolute;right: 0.5em;top: 0.5em;display: block;font-size: 24px;" href="https://github.com/lihaoyi/Scalatex/tree/master/site/src/test/scala/scalatex/site/Tests.scala#L204-L216" target="_blank"><i class="fa fa-link "></i></a></pre>
 
       <p>
-        There are several other things you to can override, for a full list, look at the source code of <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Site</code> to see what's available.
+        There are several other things you to can override, for a full list, look at the source code of <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Site</code> to see what's available.
 </p>
-  <h2 id="AdvancedTechniques" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#AdvancedTechniques" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Advanced Techniques</h2>
+  <h2 id="AdvancedTechniques" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#AdvancedTechniques" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Advanced Techniques</h2>
     <p>
       This section goes through a number of things which are not part of Scalatex by default, but are easily doable by extending Scalatex with snippets of Scala code. In general, all of these are probably sufficiently ad-hoc that the exact implementation would vary from project to project and so a built-in implementation wouldn't make sense.</p>
-    <h3 id="CustomTags" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#CustomTags" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Custom Tags</h3>
+    <h3 id="CustomTags" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#CustomTags" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Custom Tags</h3>
       <p>
         Since tags are just functions, it is easy to define custom tags just by defining your own function that returns a Scalatags fragment. For example, auto-linking URL-looking-text isn't built in as part of Scalatex, but here's a custom tag that adds the capability:
 
@@ -696,12 +696,12 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
 
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
-        Again, if you are using the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@def</code> in multiple files you can define it in Scala code and import it, but if you're only using it in one <code>.scalatex</code> file you can simply define it locally.
+        Again, if you are using the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@def</code> in multiple files you can define it in Scala code and import it, but if you're only using it in one <code>.scalatex</code> file you can simply define it locally.
 </p>
       <p>
         Note how we check for the <code>://</code> inside the URL and default it to <code>http://</code> if it's missing; this is just plain-old-Scala, since the tag is just a Scala function.
 </p>
-    <h3 id="FindingDeadLinks" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#FindingDeadLinks" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Finding Dead Links</h3>
+    <h3 id="FindingDeadLinks" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#FindingDeadLinks" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Finding Dead Links</h3>
       <p>
         Because a tag is just a function, it is trivial to add additional capabilities to it. For example, here is a version which keeps track of links that you used in the document:
 </p>
@@ -756,7 +756,7 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
         This makes it very easy to aggregate the list of all-external-links in the application. For example, if you wished to check for dead out-going links, it is trivial to loop over these URLs, since a HTTP request to each one, and verify that they all return 200s.
 </p>
       <p>
-        For internal links, i.e. references between different sections of your document, this is even easier: you have all the data needed to decide if a ref is invalid right away! Scalatex's <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Section</code> objects automatically aggregate all internal links defined using <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@sect.ref{...}</code>, all sections defined using <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@sect{...}</code>, and you can easily compare them:
+        For internal links, i.e. references between different sections of your document, this is even easier: you have all the data needed to decide if a ref is invalid right away! Scalatex's <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Section</code> objects automatically aggregate all internal links defined using <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@sect.ref{...}</code>, all sections defined using <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@sect{...}</code>, and you can easily compare them:
 </p>
       <div>
         <div style="width: 50%;float: left;">
@@ -791,15 +791,15 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
           <hr /><div style="opacity: 0.6;font-style: oblique;">
             
 
-<h1 id="PagewithRefs" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#PagewithRefs" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Page with Refs</h1>
+<h1 id="PagewithRefs" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#PagewithRefs" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Page with Refs</h1>
   <p>
     Hello World, look at
     <a href="#SectA">Sect A</a>
 </p>
-  <h2 id="SectA" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SectA" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Sect A</h2>
+  <h2 id="SectA" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SectA" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Sect A</h2>
     <p>
       I am Cow</p>
-  <h2 id="SectB" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SectB" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Sect B</h2>
+  <h2 id="SectB" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#SectB" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Sect B</h2>
     <p>
       Hear me moo. Click
       <a href="#PagewithRef">Page with Ref</a>
@@ -814,7 +814,7 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
       <p>
         Note how the typo <code>Page with Ref</code> instead of <code>Page with Refs</code> was immediately picked up. This example simply prints it to the page, but you could add an assert if you really wanted to ensure it didn't happen.
 </p>
-    <h3 id="GeneratingaTableofContents" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#GeneratingaTableofContents" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Generating a Table of Contents</h3>
+    <h3 id="GeneratingaTableofContents" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#GeneratingaTableofContents" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Generating a Table of Contents</h3>
       <p>
         Generating a TOC has also traditionally been a pain point for documents. There are two common scenarios:
 </p>
@@ -870,21 +870,21 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
           <hr /><div style="opacity: 0.6;font-style: oblique;">
             
 
-<h1 id="TOCMainSection" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCMainSection" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>TOC Main Section</h1>
+<h1 id="TOCMainSection" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCMainSection" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>TOC Main Section</h1>
   <p>
     Hello World
 </p>
-  <h2 id="TOCSubsectionA" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSubsectionA" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>TOC Subsection A</h2>
+  <h2 id="TOCSubsectionA" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSubsectionA" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>TOC Subsection A</h2>
     <p>
       I am Cow</p>
-  <h2 id="TOCSubsectionB" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSubsectionB" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>TOC Subsection B</h2>
+  <h2 id="TOCSubsectionB" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSubsectionB" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>TOC Subsection B</h2>
     <p>
       Hear me moo</p>
-  <h2 id="TOCSubsectionC" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSubsectionC" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>TOC Subsection C</h2>
-    <h3 id="TOCSub-sub-sectionC1" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSub-sub-sectionC1" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>TOC Sub-sub-section C1</h3>
+  <h2 id="TOCSubsectionC" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSubsectionC" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>TOC Subsection C</h2>
+    <h3 id="TOCSub-sub-sectionC1" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSub-sub-sectionC1" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>TOC Sub-sub-section C1</h3>
       <p>
         I weigh twice as much as you</p>
-    <h3 id="TOCSub-sub-sectionC2" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSub-sub-sectionC2" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>TOC Sub-sub-section C2</h3>
+    <h3 id="TOCSub-sub-sectionC2" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#TOCSub-sub-sectionC2" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>TOC Sub-sub-section C2</h3>
       <p>
         And I look good on
         the barbecue
@@ -895,11 +895,11 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
 
 </div><hr /></div><div style="clear: both;"></div></div>
       <p>
-        As you can see, one short recursive function and is all that is necessary to transform the captured structure into a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">ul</code> tree, with links to all the section headers! If you wish you can trivially modify this function to e.g. generate different HTML/CSS, only show top-level or top-and-second-level headers, or all manner of other things.
+        As you can see, one short recursive function and is all that is necessary to transform the captured structure into a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">ul</code> tree, with links to all the section headers! If you wish you can trivially modify this function to e.g. generate different HTML/CSS, only show top-level or top-and-second-level headers, or all manner of other things.
 </p>
       <p>
-        Note the use of the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">sect.munge</code> function. This is the function that converts the headings (with their spaces and other special characters) into a HTML element ID that can be used for the anchor link. By default, it simply removes spaces, but you can override it in the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">Highlighter</code> object if you want some custom behavior.</p>
-  <h2 id="WhyScalatex" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#WhyScalatex" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Why Scalatex</h2>
+        Note the use of the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">sect.munge</code> function. This is the function that converts the headings (with their spaces and other special characters) into a HTML element ID that can be used for the anchor link. By default, it simply removes spaces, but you can override it in the <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">Highlighter</code> object if you want some custom behavior.</p>
+  <h2 id="WhyScalatex" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#WhyScalatex" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Why Scalatex</h2>
     <p>
       Scalatex requires that you learn a new syntax for doing things, which is incompatible with <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>,  <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">Textile</a>, and any other markup language you previously learned. Apart from that, Scalatex itself was the culmination of quite a lot of work to implement. Why did I do this?</p>
     <p>
@@ -987,7 +987,7 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
     <p>
       These are things that virtually no markup generators provide, but Scalatex does. Here are a few more detailed comparisons between Scalatex and alternatives.
 </p>
-    <h3 id="WhyNot:Markdown" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#WhyNot:Markdown" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Why Not: Markdown</h3>
+    <h3 id="WhyNot:Markdown" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#WhyNot:Markdown" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Why Not: Markdown</h3>
       <p>
         <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a> is a lightweight format for writing rich text that has gained popularity recently. It has advantages of being extremely readable in plain-text: Markdown documents are formatted often exactly as someone would format emails or chat.</p>
       <p>
@@ -1003,11 +1003,11 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
         However, it also has some downsides:</p>
       <ul>
         <li>
-          <b>Completely non-customizable by default</b>: in Markdown, you have <code>`code`</code> for specifying code. But what if you want to specify the language which you want your code to be highlighted? Impossible, without special extensions. Similarly, you have <code>[link](url)</code> for specifying links. But what if you want to treat external links differently from internal links? Again, impossible. With Scalatex, you can easily define different tags for each one: <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@hl.scala{code}</code> to highlight Scala code, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@hl.javascript{code}</code> for Javascript, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@hl.html{code}</code> to highlight HTML. Similarly, you can easily define a <a href="#CustomTags">Custom Tags</a> that distinguish internal links from external links, giving them different CSS, markup of assertions.</li>
+          <b>Completely non-customizable by default</b>: in Markdown, you have <code>`code`</code> for specifying code. But what if you want to specify the language which you want your code to be highlighted? Impossible, without special extensions. Similarly, you have <code>[link](url)</code> for specifying links. But what if you want to treat external links differently from internal links? Again, impossible. With Scalatex, you can easily define different tags for each one: <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@hl.scala{code}</code> to highlight Scala code, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@hl.javascript{code}</code> for Javascript, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@hl.html{code}</code> to highlight HTML. Similarly, you can easily define a <a href="#CustomTags">Custom Tags</a> that distinguish internal links from external links, giving them different CSS, markup of assertions.</li>
         <li>
           <b>Messy, ad-hoc extensions</b>: <a href="https://pythonhosted.org/Markdown/extensions/">Python Markdown</a> provides a list of extensions. <a href="commonmark.org">CommonMark.org</a> does too. How do these extensions interact with other extensions? How do you implement your own? The answer to the first question is &quot;Who knows?&quot; and to the second &quot;Regexes&quot;. Naturally, this makes people hesitant to implement extensions: they'd rather C&amp;P markup than deal with crazy regex transforms. Is highlight code done using <code>```scala</code> or <code>{% highlight scala %}</code>? With Scalatex, defining <a href="#CustomTags">Custom Tags</a> is so easy that it's the natural thing to do, so you never need to worry about weird interactions between weird custom syntaxes.</li>
         <li>
-          <b>Unclear semantics</b>. For example, for rendering a link with parentheses in the URL, there are a <a href="http://meta.stackexchange.com/questions/13501/links-to-urls-containing-parentheses">dozen different work-arounds</a> that make it work in increasingly roundabout ways, all stemming from the fact that Markdown doesn't have a good, standard way of expressing escape-characters. With Scalatex, the semantics are much more regular: you can put anything in a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@(&quot;string&quot;)</code> to escape it, and always fall back to Scala-strings with Scala-string-escapes. And their semantics behave exactly as you'd expect.</li>
+          <b>Unclear semantics</b>. For example, for rendering a link with parentheses in the URL, there are a <a href="http://meta.stackexchange.com/questions/13501/links-to-urls-containing-parentheses">dozen different work-arounds</a> that make it work in increasingly roundabout ways, all stemming from the fact that Markdown doesn't have a good, standard way of expressing escape-characters. With Scalatex, the semantics are much more regular: you can put anything in a <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@(&quot;string&quot;)</code> to escape it, and always fall back to Scala-strings with Scala-string-escapes. And their semantics behave exactly as you'd expect.</li>
         <li>
           <b>Unsafe</b>: What happens if you fat-finger some special characters in Markdown? You get another, perfectly valid markdown document, that you did not want. If you fat-finger a tag in Scalatex, you get a compilation error telling you where you made a mistake.</li></ul>
       <p>
@@ -1016,7 +1016,7 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
       <p>
         This makes large-scale documents much more pleasant, to the extent that you can perform large-scale refactorings of your Scalatex document without worrying about broken intra-document links or a stale table-of-contents.
 </p>
-    <h3 id="WhyNot:Twirl" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#WhyNot:Twirl" style="position: absolute;right: 0;"><i class="fa fa-link"></i></a>Why Not: Twirl</h3>
+    <h3 id="WhyNot:Twirl" style="display: block;" class="scalatex-header scalatex-hover-container"><a class="scalatex-header-link" href="#WhyNot:Twirl" style="position: absolute;right: 0px;"><i class="fa fa-link"></i></a>Why Not: Twirl</h3>
       <p>
         <a href="https://github.com/playframework/twirl#twirl">Twirl</a> is the templating engine used by the <a href="https://www.playframework.com/documentation/2.3.x/ScalaTemplates">Play framework</a>. It provides a Scala-based syntax (and implementation!) very similar to Scalatex.</p>
       <p>
@@ -1024,9 +1024,9 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
 </p>
       <ul>
         <li>
-          <b>Scalatex has dropped Twirl's XML syntax</b>: using tags like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">&lt;div&gt;</code> are redundant when you can use tags like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">@div</code>, and so the latter is now the only way to do things.</li>
+          <b>Scalatex has dropped Twirl's XML syntax</b>: using tags like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">&lt;div&gt;</code> are redundant when you can use tags like <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">@div</code>, and so the latter is now the only way to do things.</li>
         <li>
-          <b>Scalatex has regularized the Twirl grammar substantially</b>: Twirl only allows function definitions to occur in templates at the top-level, which Scalatex allows <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">object</code>s, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">class</code>es, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">def</code>s, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">val</code>s anywhere with your document with proper lexical scoping. This makes working with large documents much easier, as you aren't restricted by the ad-hoc &quot;only-top-level&quot; constraint when trying to remove duplication within your document.</li>
+          <b>Scalatex has regularized the Twirl grammar substantially</b>: Twirl only allows function definitions to occur in templates at the top-level, which Scalatex allows <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">object</code>s, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">class</code>es, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">def</code>s, <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">val</code>s anywhere with your document with proper lexical scoping. This makes working with large documents much easier, as you aren't restricted by the ad-hoc &quot;only-top-level&quot; constraint when trying to remove duplication within your document.</li>
         <li>
           <b>Scalatex has made indentation significant</b>, thus greatly reducing the need for curly brackets in large documents.</li>
         <li>
@@ -1037,7 +1037,7 @@ site.renderTo(wd/'site/'target/'output2)</code><a class="scalatex-header-link" s
         <li>
           Being able to parametrize an entire template as a function</li>
         <li>
-          Being able to define <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">def</code>s using Scalatex syntax; Scalatex <code class="scala scalatex-highlight-js" style="display: inline;padding: 0;margin: 0;">def</code>s have to be defined using Scala syntax</li></ul>
+          Being able to define <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">def</code>s using Scalatex syntax; Scalatex <code class="scala scalatex-highlight-js" style="display: inline;padding: 0px;margin: 0px;">def</code>s have to be defined using Scala syntax</li></ul>
       <p>
         In general, Scalatex aims to be much more regular and lighter weight than Twirl. You probably wouldn't want to use Twirl to write a book due to it's excess of curlies and XML, whereas with Scalatex you can (and <a href="lihaoyi.github.io/hands-on-scala-js/#Hands-onScala.js">I have</a>). At the same time, Scalatex keeps the best part of Twirl - the abilities to eliminate repetition using plain Scala - and extends to to work more regularly.</p>
       <p>
